@@ -50,7 +50,7 @@ This game was created to:
 
 ---
 
-## ❓ 5. Important Questions & Answers (For Presentation)
+## ❓ 5. Important Questions & Answers
 
 | No. | Question | Answer |
 |-----|----------|--------|
