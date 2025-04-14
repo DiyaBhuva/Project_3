@@ -132,40 +132,6 @@ g++ AlienHunter.cpp -o AlienHunter
 ---
 
 
-
-## ❓ 11. Important Questions & Answers (For Presentation)
-
-
-
-| No. | Question | Answer |
-
-|-----|----------|--------|
-
-| 1 | What is the logic of shooting? | When the spacebar is pressed, a bullet's position is stored in an array. In the game loop, the bullet moves upward by reducing its y-coordinate. |
-
-| 2 | How does the alien fall? | Aliens are randomly generated at the top and their y-coordinate increases in every loop iteration, simulating falling. |
-
-| 3 | How is collision detected? | The bullet and alien positions are compared. If their x and y match, it’s a hit. The alien is removed and score increases. |
-
-| 4 | How is input handled? | Using `kbhit()` to check if a key is pressed, and `getch()` to get the pressed key (left, right, space, escape). |
-
-| 5 | What happens on game over? | If an alien reaches the ship’s row or bottom of screen, game over is triggered. Score is then saved. |
-
-| 6 | How is high score saved? | After entering the name, the score is written to `hunter.txt`. All scores are read from file and sorted for display. |
-
-| 7 | Why is `gotoxy()` used? | To move the console cursor to a specific (x, y) position for redrawing the ship, aliens, bullets. |
-
-| 8 | What is the role of `Sleep()`? | It controls the speed of the game loop to slow down alien/bullet movement, simulating animation. |
-
-| 9 | Why did you use structs? | To store the player’s name and score in a single object, making it easier to sort and manage. |
-
-| 10 | How is flickering prevented? | Screen is redrawn every loop with updated positions using `gotoxy()` instead of clearing the whole screen. 
-
-
----
-
-
-
 ## 🏁 14. Ending Note
 
 
